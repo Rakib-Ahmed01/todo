@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Tailwind Starter</title>
+    <script
+      src="https://kit.fontawesome.com/370c8f2c18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      #del-btn {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="w-[96%] max-w-3xl border p-5 mx-auto mt-8 rounded">
+      <div class="add-task-container flex justify-between">
+        <input
+          id="add-task"
+          class="p-[.1875rem] rounded basis-[80%] border focus:outline-none placeholder:pl-2"
+          type="text"
+          placeholder="Add Task"
+        />
+        <button
+          id="add-btn"
+          class="px-3 py-[5px] rounded bg-emerald-400 text-white font-semibold"
+        >
+          Add Task
+        </button>
+      </div>
+      <hr class="my-6" />
+      <table class="w-full p-2">
+        <thead>
+          <tr class="border-b-2">
+            <th class="p-2">Number</th>
+            <th class="p-2">Description</th>
+            <th class="p-2">Action</th>
+          </tr>
+          <tr></tr>
+        </thead>
+        <tbody id="tbody" class="text-center font-medium"></tbody>
+      </table>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
